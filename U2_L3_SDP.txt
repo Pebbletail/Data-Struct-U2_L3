@@ -1,0 +1,6 @@
+1. self.__turn should be swapped at the end of place_token()
+2. Using a matrix, 3x3. for example, index [1][1] would be the center, and [2][2] would be the bottom right corner.
+3. At the end of place_token() the __check_win() should be called, and the current board state should be sent into it.
+4. generate_game() would initialize the board, play_game() would have a loop of placetoken() and is_winner() until an end condition is met.
+5. check if every element in any list is X or O, if a cell is empty or is a different token than the first in the row, terminate 
+  the check for that row. do the same with every column. Save the corner and middle tokens during and compare them at the end.
